@@ -4,6 +4,7 @@
     :load-data="loadData"
     placeholder="Please select"
     change-on-select
+    expandTrigger="hover"
     @change="onChange"
   />
 </template>
@@ -12,6 +13,7 @@ import { Cascader } from 'ant-design-vue';
 import Vue from 'vue';
 Vue.use(Cascader);
 export default {
+  name: 'App',
   data() {
     return {
       options: [
